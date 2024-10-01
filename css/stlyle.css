@@ -1,5 +1,60 @@
 body {
-    background-image: url(/assets/images/logInBackground.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(.../assets/images/logInBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: rgb(59, 54, 58);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px;
+    width: 300px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+input[type="text"], input[type="password"] {
+    width: 260px; /* Full width input fields */
+    padding: 10px; /* Padding inside the input fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners for input fields */
+    font-size: 16px; /* Font size */
+}
+
+button {
+    text-align: center;
+    width: 50%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
 }
