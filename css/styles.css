@@ -35,7 +35,7 @@ label {
 
 
 input[type="text"], input[type="password"] {
-    width: 260px; /* Full width input fields */
+    width: 280px; /* Full width input fields */
     padding: 10px; /* Padding inside the input fields */
     border: 1px solid #ccc; /* Light gray border */
     border-radius: 5px; /* Rounded corners for input fields */
@@ -44,7 +44,7 @@ input[type="text"], input[type="password"] {
 
 button {
     text-align: center;
-    width: 50%; /* Full width button */
+    width: 40%; /* Full width button */
     padding: 10px; /* Padding inside the button */
     background-color: #007bff; /* Button color */
     color: white; /* Button text color */
@@ -53,6 +53,34 @@ button {
     font-size: 16px; /* Font size */
     cursor: pointer; /* Pointer cursor on hover */
     transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.button-group {
+    display: flex;
+    align-items: center; /* Center aligns items vertically */
+    justify-content: space-around; /* Center aligns items horizontally */
+    margin-top: 10px;
+}
+.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.or-text {
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #218838; /* Slightly darker green on hover */
 }
 
 button:hover {
