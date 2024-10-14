@@ -6,10 +6,25 @@
     <title>Login - Xmessage</title>
 </head>
 <body>
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <!-- Add more divs with the "star" class as needed for more stars -->
+    </div>
     <div class="container">
         <div class="form-box">
             <h2>Log In</h2>
-            <form>
+            <form action="/user/login" method="POST">
                 <div class="input-group">
                     <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
@@ -18,8 +33,14 @@
                     <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                <button type="submit">Log In</button>
+                <div class="button-container">
+                    <button type="submit">Log In</button>
+                </div>
+                <div th:if="${error}" style="color:red">
+                    <p th:text="${error}"></p>
+                </div>
             </form>
+            
         </div>
     </div>
 </body>
